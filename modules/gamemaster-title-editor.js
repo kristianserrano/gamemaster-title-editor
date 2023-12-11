@@ -4,8 +4,8 @@ const SOURCE = { title: '' };
 Hooks.on('init', () => {
 
     game.settings.register(MODULE_ID, 'customGamemasterTitle', {
-        name: game.i18n.localize('GamemasterTitleEditor.CustomGamemasterTitle.Name'),
-        hint: game.i18n.localize('GamemasterTitleEditor.CustomGamemasterTitle.Hint'),
+        name: game.i18n.localize('GameMasterTitleEditor.CustomGamemasterTitle.Name'),
+        hint: game.i18n.localize('GameMasterTitleEditor.CustomGamemasterTitle.Hint'),
         scope: 'world',
         config: true,
         type: String,
