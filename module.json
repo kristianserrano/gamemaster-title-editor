@@ -2,6 +2,10 @@
   "id": "gamemaster-title-editor",
   "title": "Gamemaster Title Editor",
   "version": "1.0.0",
+  "description": "Allows you to change \"Gamemaster\" and \"GM\" to a preferred Title.",
+  "url": "https://www.patreon.com/KristianSerrano",
+  "download": "",
+  "manifest": "",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
@@ -17,8 +21,6 @@
   "esmodules": [
     "modules/gamemaster-title-editor.js"
   ],
-  "description": "Allows you to change \"Gamemaster\" and \"GM\" to a preferred Title.",
-  "url": "https://www.patreon.com/KristianSerrano",
   "flags": {
     "hotReload": {
       "extensions": [
