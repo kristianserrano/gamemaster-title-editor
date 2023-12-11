@@ -1,0 +1,9 @@
+{
+    "GamemasterTitleEditor": {
+        "Title": "Gamemaster Title Editor",
+        "CustomGamemasterTitle": {
+            "Name": "Gamemaster Title",
+            "Hint": "Replaces \"Gamemaster\" and \"GM\" in the Players List and A/V panel repsectively."
+        }
+    }
+}
