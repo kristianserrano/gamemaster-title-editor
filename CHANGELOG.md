@@ -1,5 +1,9 @@
 # Gamemaster Title Editor
 
+## v1.0.3
+
+- Changes the module's name from Game Master Title Editor to Gamemaster Title Editor to align with Foundry VTT's spelling of the term.
+
 ## v1.0.2
 
 - Verified for Foundry VTT v12.
