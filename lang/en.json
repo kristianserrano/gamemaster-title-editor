@@ -1,9 +1,9 @@
 {
     "GameMasterTitleEditor": {
-        "Title": "Game Master Title Editor",
+        "Title": "Gamemaster Title Editor",
         "CustomGamemasterTitle": {
-            "Name": "Game Master Title",
-            "Hint": "Replaces the Game Master's title in the Players List and A/V panel."
+            "Name": "Gamemaster Title",
+            "Hint": "Replaces the Gamemaster's title in the Players List and A/V panel."
         }
     }
 }

@@ -1,4 +1,4 @@
-# Game Master Title Editor
+# Gamemaster Title Editor
 
 ## v1.0.2
 

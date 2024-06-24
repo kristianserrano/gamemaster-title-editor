@@ -1,8 +1,8 @@
 {
   "id": "gamemaster-title-editor",
-  "title": "Game Master Title Editor",
+  "title": "Gamemaster Title Editor",
   "version": "1.0.0",
-  "description": "Allows you to customize the Game Master's title (i.e., GM). This replaces the title in the Players List and A/V panel.",
+  "description": "Allows you to customize the Gamemaster's title (e.g., \"The Keeper\" instead of \"GM\"). This replaces the title in the Players List and A/V panel.",
   "url": "https://www.patreon.com/KristianSerrano",
   "download": "",
   "manifest": "",
