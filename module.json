@@ -1,14 +1,26 @@
 {
   "id": "gamemaster-title-editor",
   "title": "Gamemaster Title Editor",
-  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Kristian Serrano",
+      "email": "kristianserrano@gmail.com",
+      "url": "https://immaterialplane.com",
+      "discord": "kristianserrano"
+    }
+  ],
   "description": "Allows you to customize the Gamemaster's title (e.g., \"The Keeper\" instead of \"GM\"). This replaces the title in the Players List and A/V panel.",
-  "url": "https://www.patreon.com/KristianSerrano",
+  "version": "",
+  "url": "",
   "download": "",
   "manifest": "",
+  "readme": "",
+  "changelog": "",
+  "bugs": "",
   "compatibility": {
-    "minimum": "11",
-    "verified": "12"
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "13"
   },
   "languages": [
     {
