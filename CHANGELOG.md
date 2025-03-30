@@ -1,5 +1,9 @@
 # Gamemaster Title Editor
 
+## v1.1.1
+
+- Fixes a bug with attempting to store the default title during setup.
+
 ## v1.1.0
 
 - Updates to v13 compatibility.
