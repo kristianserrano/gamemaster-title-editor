@@ -1,5 +1,4 @@
 const MODULE_ID = 'gamemaster-title-editor';
-const SOURCE = { title: '' };
 
 Hooks.on('init', () => {
 
@@ -12,19 +11,18 @@ Hooks.on('init', () => {
         default: '',
         submitOnChange: false,
         requiresReload: false,
-        onChange: async value => {
-            if (value === '') {
+        onChange: async (value) => {
+            const name = value.trim();
+
+            if (name === '') {
                 const sourceTitle = game.settings.get(MODULE_ID, "sourceTitle");
                 game.i18n.translations.USER.GM = sourceTitle;
-                game.i18n.translations.GM = sourceTitle;
             } else {
-                game.i18n.translations.USER.GM = value;
-                game.i18n.translations.GM = value;
+                game.i18n.translations.USER.GM = name;
             }
 
-            const playersList = game.users.apps.find(app => app.id === 'players');
-            playersList.render();
-            game.webrtc.render();
+            await foundry.applications.instances.get('players')?.render();
+            await foundry.applications.instances.get("camera-views").render();
         }
     });
 
@@ -38,15 +36,7 @@ Hooks.on('init', () => {
 });
 
 Hooks.on('setup', async () => {
-    SOURCE.title = game.i18n.translations.USER.GM;
-    const title = game.settings.get(MODULE_ID, "customGamemasterTitle");
-
-    if (title) {
-        game.i18n.translations.USER.GM = title;
-        game.i18n.translations.GM = title;
-    }
-});
-
-Hooks.on('ready', async () => {
-    await game.settings.set(MODULE_ID, "sourceTitle", SOURCE.title);
+    game.settings.set(MODULE_ID, 'sourceTitle', game.i18n.translations.USER.GM);
+    const customTitle = game.settings.get(MODULE_ID, "customGamemasterTitle").trim();
+    game.i18n.translations.USER.GM = customTitle.length ? customTitle : game.i18n.translations.USER.GM;
 });
