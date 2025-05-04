@@ -1,5 +1,10 @@
 # Gamemaster Title Editor
 
+## v1.1.2
+
+- Adds context menu option for GMs in Players list to configure the Gamemaster title.
+- Fixes error when A/V application is not rendered.
+
 ## v1.1.1
 
 - Fixes a bug with attempting to store the default title during setup.
