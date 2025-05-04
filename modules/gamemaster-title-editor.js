@@ -14,7 +14,7 @@ Hooks.on('init', () => {
             const name = value.trim();
             game.i18n.translations.USER.GM = name.length ? name : CONFIG.CustomGMTitle.coreDefault;
             await foundry.applications.instances.get('players')?.render();
-            await foundry.applications.instances.get("camera-views").render();
+            await foundry.applications.instances.get("camera-views")?.render();
         }
     });
 });
