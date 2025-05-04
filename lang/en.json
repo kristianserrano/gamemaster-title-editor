@@ -4,6 +4,7 @@
         "CustomGamemasterTitle": {
             "Name": "Gamemaster Title",
             "Hint": "Replaces the Gamemaster's title in the Players List and A/V panel."
-        }
+        },
+        "EditGamemasterTitle": "Edit Gamemaster Title"
     }
 }

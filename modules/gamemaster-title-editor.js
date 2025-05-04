@@ -26,3 +26,18 @@ Hooks.on('setup', async () => {
     const customTitle = game.settings.get(MODULE_ID, "customGamemasterTitle").trim();
     game.i18n.translations.USER.GM = customTitle.length ? customTitle : CONFIG.CustomGMTitle.coreDefault;
 });
+
+Hooks.on('getUserContextOptions', (players, options) => {
+    if (game.user.isGM) {
+        options.push({
+            name: game.i18n.localize('GameMasterTitleEditor.EditGamemasterTitle'),
+            icon: '<i class="fas fa-input-text"></i>',
+            condition: (li) => {
+                return game.users.get(li.dataset.userId)?.isGM;
+            },
+            callback: async (li) => {
+                await new SettingsConfig().render({ force: true }).then((settingsConfig) => settingsConfig.changeTab('gamemaster-title-editor', 'categories'));
+            }
+        });
+    }
+})
